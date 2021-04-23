@@ -10,7 +10,7 @@ MobileNet提出了Depthwise & Pointwise Convolution。我们在这里实现Mobil
 
 将ResNet18作为Teacher Net(使用torchvision中的ResNet18，仅将num_classes改成11，加载助教训练好的Accuracy约为88.4%的参数)，将上一步(1.Architecture Design)设计的小model作为Student Net，使用Knowledge_Distillation策略训练Student Net。
 
-Loss计算方法为$Loss = \alpha T^2 \times KL(\frac{\text{Teacher's Logits}}{T} || \frac{\text{Student's Logits}}{T}) + (1-\alpha)(\text{Original Loss})$，关于为什么要对student进行logsoftmax可见https://github.com/peterliht/knowledge-distillation-pytorch/issues/2。
+Loss计算方法为$Loss = \alpha T^2 \times KL(\frac{\text{Teacher's Logits}}{T} || \frac{\text{Student's Logits}}{T}) + (1-\alpha)(\text{Original Loss})$，关于为什么要对student进行logsoftmax可见https://github.com/peterliht/knowledge-distillation-pytorch/issues/2
 
 论文《Distilling the Knowledge in a Neural Network》：https://arxiv.org/abs/1503.02531
 
@@ -18,7 +18,8 @@ Loss计算方法为$Loss = \alpha T^2 \times KL(\frac{\text{Teacher's Logits}}{T
 
 对上一步(2.Knowledge_Distillation)训练好的Student Net做剪枝。
 
-根据论文《Learning Efficient Convolutional Networks through Network Slimming》，论文链接：https://arxiv.org/abs/1708.06519，BatchNorm层中的gamma值和一些特定卷积核（或者全连接层的一个神经元）相关联，因此可以使用BatchNorm层中的gamma值判断相关通道的重要性。
+根据论文《Learning Efficient Convolutional Networks through Network Slimming》，论文链接：https://arxiv.org/abs/1708.06519
+BatchNorm层中的gamma值和一些特定卷积核（或者全连接层的一个神经元）相关联，因此可以使用BatchNorm层中的gamma值判断相关通道的重要性。
 
 Student Net中CNN部分有几个结构相同的Sequential，其结构、权重名称、实现代码、权重形状如下表所示。
 
