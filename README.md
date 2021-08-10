@@ -1,9 +1,10 @@
 # LHY_ML2020_Codes
 该仓库的内容为李宏毅机器学习2020课程的相关代码
 
-![img](https://images.cnblogs.com/cnblogs_com/chouxianyu/1511971/o_210810082736wechat_qrcode.jpg)
+![wechat_qrcode](./wechat_qrcode.jpg)
 
-扫描二维码，关注公众号`臭咸鱼`，回复`LHY`即可下载课程配套代码、数据、PPT、**笔记（markdown以及PDF版本）**
+### 扫描二维码，关注公众号`臭咸鱼`
+### 回复`LHY`即可下载课程配套代码、数据、PPT，关键是还有markdown以及PDF版本笔记！！
 
 课程官网：http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML20.html
 
