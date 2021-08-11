@@ -5,6 +5,7 @@
 
 ### 扫描二维码，关注公众号`臭咸鱼`
 ### 回复`LHY`即可下载课程配套代码、数据、PPT，关键是还有markdown以及PDF版本笔记！！
+### 关注公众号，还可下载论文阅读笔记、ResNet网络结构图等各种资源！
 
 课程官网：http://speech.ee.ntu.edu.tw/~tlkagk/courses_ML20.html
 
